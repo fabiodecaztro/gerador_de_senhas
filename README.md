@@ -1,5 +1,5 @@
 # gerador_de_senhas
-**Gerador de senhas criado em Python com opções para escolha de quantidade de caracteres e tipos de caracteres.**
+**Gerador de senhas criado em Python com opções para escolha de quantidade e tipo de caractere.**
 
 ###Datas
 * Início do projeto: 27/06/2022
@@ -7,17 +7,21 @@
 * Término do projeto:
 
 ###Caracteristicas implementadas e futuras
-* Python puro.
+  
 * Entre 4 e 50 caracteres.
 * Números.
+  De um a cinco conjuntos de dez dígitos cada que não se repete, formando ao final a senha completa. 
+  Exemplo _(Espaços entre os dígitos apenas para ilustração)_
+  11 dígitos - 6890271354 4
+  50 dígitos - 9263041785 5164079328 1360897524 8947210653 6574931082
 * Letras.
 * Números e letras.
 * Números, letras e caracteres especiais.
 * Opção de saída a qualquer momento.
-* Comando para copiar senha.
-* Opção para armazenar senhas no banco de dados 
+* Copia senha para area de transferência.
+* Opção para armazenar senhas no banco de dados _(v2.0)_
 
 ###Ambiente Virtual
-* Nenhum pacaote especial adicionado
+* clipboard instalado 
 
 Desenvolvido por <https://github.com/fabiodecaztro>

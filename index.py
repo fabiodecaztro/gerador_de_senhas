@@ -1,4 +1,7 @@
 from os import system as limpa_tela
+from GeradorDeSenha import GeradorDeSenhas
+
+
 limpa_tela('cls')
 
 
@@ -10,8 +13,9 @@ def encerra_gerador():
     print('\nGerador de senhas finalizado - Obrigado.\n')
 
 
-def mensagem_com_enfeite(mensagem):
-    limpa_tela('cls')
+def mensagem_com_enfeite(mensagem, limpa=True):
+    if limpa:
+        limpa_tela('cls')
     print(enfeite_divisor)
     print(mensagem)
     print(enfeite_divisor)
@@ -76,6 +80,14 @@ match tipo_de_caracter_escolhido:
     case 4:
         opcoes_de_caracter = 'números, letras e caracteres especiais'
 
+gera_senha = GeradorDeSenhas()
+
 if quantidade_caracteres_escolhido and tipo_de_caracter_escolhido:
     mensagem_com_enfeite(
-        f'Aguarde, a senha de {quantidade_caracteres_escolhido} caracteres e contendo {opcoes_de_caracter} será gerada!')
+        f'A senha de {quantidade_caracteres_escolhido} caracteres e contendo {opcoes_de_caracter} foi gerada!')
+#3# Colocar o verificador de tamanho dentro da classe
+    print(gera_senha.verificador(
+        quantidade_caracteres_escolhido, tipo_de_caracter_escolhido))
+    mensagem_com_enfeite('Senha copiada para area de transferência', False)
+
+
